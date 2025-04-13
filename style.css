@@ -79,7 +79,7 @@ header{
     overflow: hidden;
     text-align: center;
     font-family: var(--font-prime);
-    font-size: 1.5em;
+    font-size: 3em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ header{
 
     span{
         white-space: nowrap;
-        width: 100%;
+        width: 99%;
         animation: scrollThrough 20s linear infinite;
     }
     span::after{
@@ -99,11 +99,11 @@ header{
   .container{
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     flex-direction: row;
     flex-wrap:wrap ;
     width: 100%;
-    height: 90%;
+    height: 100%;
 
     .blok{
         border: 2px solid var(--color-darkBrown);
@@ -111,33 +111,33 @@ header{
         
         &.klein{
             width: 10%;
-            height: 150px;
+            height: 250px;
         }
 
         &.med{
             width: 20%;
-            height: 150px;
+            height: 250px;
         }
 
         &.large{
             width: 40%;
-            height: 150px;
+            height: 250px;
         }
 
         h3{
           font-family: var(--font-sec);
-          font-size: 1.5em;
+          font-size: 2em;
           font-weight: 400;
       
           opacity: 0.2;
           color: var(--color-darkBrown);
           position: relative;
-          top: 75%;
+          top: 80%;
           left: 5%;
 
           &:hover{
             opacity: 1;
-            transform: scale(1.1);
+            transform: scale(1.05);
             transition: all 0.5s ease-in-out;
           }
   
@@ -154,7 +154,7 @@ header{
     width: 100%;
     height: 10%;
     padding: 0 0 5%;
-    border-bottom: solid 2px var(--color-darkBrown);
+    
     nav{
 
       width: 100%;
@@ -196,13 +196,13 @@ header{
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  justify-content: baseline;
+  justify-content: center;
   flex-wrap:wrap ;
 
   width: 100%;
   height: 100%;
   margin-top: -5%;
-  border-top: solid 2px var(--color-darkBrown);
+  border-top: solid 5px var(--color-darkBrown);
 
     .seg{
       width: 50%;
@@ -211,13 +211,11 @@ header{
       &.one{
         background-color: var(--color-medBrown);
         border-radius: 0 0 50% 0;
-        height: 300px;
+        height: 600px;
       }
 
       &.two{
-        height: 300px;
-
-
+        height: 500px;
         
         .contact{
           display: flex;
@@ -230,8 +228,8 @@ header{
           top: -20%;
          
           li{
-          width:30px;
-          height: 30px;
+          width:60px;
+          height: 60px;
           list-style-type: none;
 
             a{
@@ -239,7 +237,7 @@ header{
               text-decoration: none;
               color: var(--color-darkBrown);
               font-family: var(--font-sec);
-              font-size: 1em;
+              font-size: 1.5em;
 
               .socialImg{
                 color: var(--color-roseyRed);
@@ -303,21 +301,21 @@ header{
 
   h1{
     font-family: var(--font-prime);
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: 400;
     margin: 0 10%;
   }
 
   h2{
     font-family: var(--font-sec);
-    font-size: 1em;
+    font-size: 2em;
     margin: 0 10%;
     color: var(--color-roseyRed);
   }
 
   p{
     font-family: var(--font-ter);
-    font-size: 0.5em;
+    font-size: 1em;
 
     margin: 0 10%;
   }
@@ -340,17 +338,19 @@ header{
   flex-wrap:nowrap ;
   width: 100%;
   height: 100%;
+  border-top: solid 5px var(--color-darkBrown);
+  margin: -5% 0;
 
   .proj{
-    border: solid 2px var(--color-SlightlyGreen);
+    border: solid 4px var(--color-SlightlyGreen);
     width: 25%;
-    height: 200px;
+    height: 400px;
     opacity: 0.5;
     filter: grayscale(100%);
 
    h2{
     font-family: var(--font-sec);
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 400;
     font-display: swap;
     color: var(--color-SlightlyGreen);
@@ -398,8 +398,8 @@ header{
 .modal{
 
   background-color: var(--color-beige);
-  width: 100%;
-  height: 800px;
+  width: 50%;
+  height: 50%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -407,20 +407,20 @@ header{
   border: none;
 
   &::backdrop{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   h2{
     font-family: var(--font-prime);
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 400;
     color: var(--color-roseyRed);
-
+    margin: 0 5%;
   }
 
   p{
     font-family: var(--font-ter);
-    font-size: 0.8em;
+    font-size: 1em;
     color: var(--color-darkBrown);
     margin: 5%;
     border-top: solid 2px var(--color-darkBrown);
@@ -431,7 +431,7 @@ header{
     position: absolute;
     top: 5%;
     right: 5%;
-    font-size: 2em;
+    font-size: 3em;
     color: var(--color-darkBrown);
     cursor: pointer;
   }
@@ -440,9 +440,9 @@ header{
     text-decoration: none;
     position: relative;
     top: 50%;
-    left: 5%;
+    left: 80%;
     font-family: var(--font-sec);
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: var(--color-darkBrown);
 
     &:hover{
@@ -455,15 +455,22 @@ header{
 
 
 /*Projectpage na 'lees meer'*/
+header{
 .backProjectHub{
   background: none;
   border: none;
   color: var(--color-darkBrown);
  
   font-family: var(--font-sec);
-  font-size: 1.5em;
+  font-size: 0.5em;
   
   cursor: pointer;
+
+  &:hover{
+    color: var(--color-faintYellow);
+    transition: all 0.5s ease-in-out;
+  }
+}
 }
 
 .containerProject{
@@ -474,27 +481,23 @@ header{
   flex-wrap:wrap;
   width: 100%;
   border-top: solid 2px var(--color-darkBrown);
+  margin: -5% 0;
 
     .backdrop{
       background: url('assets/video/genart2.gif');
       background-size: cover;
       background-position: center;
+      background-clip: text;
+      color: transparent;
       width: 100%;
-      height: 200px;
+      height: 400px;
 
       h1{
         font-family: var(--font-prime);
-        font-size: 2em;
+        font-size: 20em;
         font-weight: 400;
-        color: var(--color-roseyRed);
-      }
-
-      h2{
-        font-family: var(--font-ter);
-        font-size: 1em;
-        font-weight: 400;
-        color: var(--color-SlightlyGreen);
-        margin: 0 5%;
+        text-align: center;
+        margin: -5% 0 5% 0;
       }
     }
 
@@ -504,7 +507,7 @@ header{
 
       h3{
         font-family: var(--font-sec);
-        font-size: 1.5em;
+        font-size: 2.5em;
         font-weight: 400;
         color: var(--color-darkBrown);
         margin: 0 5%;
@@ -512,7 +515,7 @@ header{
 
       h4{
         font-family: var(--font-sec);
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: 400;
         color: var(--color-roseyRed);
         margin: 0 5%;
@@ -520,14 +523,14 @@ header{
 
       p{
         font-family: var(--font-ter);
-        font-size: 0.6em;
+        font-size: 1.5em;
         color: var(--color-darkBrown);
         margin: 2% 5%;
       }
 
       li{
         font-family: var(--font-ter);
-        font-size: 0.7em;
+        font-size: 1.2em;
         color: var(--color-darkBrown);
 
         list-style-type: square;
@@ -539,7 +542,7 @@ header{
         background-repeat: no-repeat;
         background-position: center;
         transform: rotate(-90deg);
-        height: 300px;
+        height: 600px;
 
         border-radius: 0 0 50% 0;
       }
@@ -549,7 +552,7 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 300px;
+        height: 600px;
         border-radius: 50% 50% 0 50%;
         transform: scale(0.8);
      
@@ -560,7 +563,7 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 400px;
+        height: 600px;
         border-radius:0 50%;
         transform: rotate(-90deg);
 
@@ -579,7 +582,7 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 400px;
+        height: 600px;
         border-radius:50% 50%;
         transform: rotate(-90deg);
       }
@@ -596,4 +599,190 @@ header{
     100%{
         transform: translateX(-50%);
     }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    header{
+      font-size: 2em;
+      span{
+        font-size: 0.6em;
+      }
+    }
+
+    .container{
+      flex-direction: row;
+      
+      .blok{
+        &.klein{
+          width: 20%;
+          height: 100px;
+        }
+
+        &.med{
+          width: 40%;
+          height: 100px;
+        }
+
+        &.large{
+          width: 80%;
+          height: 100px;
+        }
+
+        h3{
+          font-size: 1em;
+          top: 70%;
+          left: 5%;
+        }
+    }
+    }
+
+    header{
+      text-align: center;
+      nav{
+        ul{
+          padding: 0;
+        
+          li{
+            margin: 0;
+            font-size: 0.4em;
+           
+          }
+        }
+      }
+    }
+
+    .containerB{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .seg{
+        width: 100%;
+
+        &.one{
+
+          h1{
+            font-size: 2em;
+          }
+
+          h2{
+            font-size: 1em;
+          }
+
+          p{
+            font-size: 0.8em;
+            margin: 0 5%;
+          };
+        }
+
+        &.two{
+         
+          #opacity{
+            border-radius: 50% 0 0 50% ;
+          }
+
+          #shapeOne{
+            height: 20%;
+            top: -25%;
+          }
+
+          #shapeTwo{
+            height: 20%;
+           top: -35%;
+          }
+
+          .contact{
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .containerP{
+      flex-wrap: wrap;
+
+      .proj{
+        width: 50%;
+        height: 200px;
+
+        h2{
+          font-size: 0.9em;
+          top: 80%;
+          left: 5%;
+        }
+      }
+    }
+
+    .modal{
+      width: 70%;
+    
+
+      .modal-content{
+     
+        h2{
+          font-size: 1.2em;
+        }
+
+        p{
+          font-size: 0.7em;
+          margin: 5%;
+        }
+
+        a{
+          font-size: 0.9em;
+          position: relative;
+          left: 60%;
+        }
+
+        .close{
+          font-size: 2em;
+          top: 5%;
+          right: 5%;
+        }
+      }
+    }
+
+    .containerProject{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .backdrop{
+        height: 100px;
+        h1{
+          font-size: 5em;
+        }
+      }
+      .box{
+        width: 100%;
+        
+        &.one, &.four, &.seven, &.eight{
+          height: 300px;
+          
+        }
+
+
+      h4{
+        font-size: 1.2em;
+        margin-top: 10%;
+      }
+
+      h3{
+        font-size: 1.5em;
+        margin-top: 5%;
+      }
+
+      p{
+        font-size: 1em;
+        margin-top: 2%;
+      }
+
+      li{
+        font-size: 0.8em;
+      }
+      }
+    }
+    
+    
   }
