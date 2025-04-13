@@ -1,8 +1,50 @@
-let navLink = document.querySelectorAll('li');
+let projects = document.querySelectorAll('.proj');
+let modalProj = document.querySelector('.modal');
+let closeBtn = document.querySelector('.close');
 
+let projTitle = document.querySelector('.projTitle');
+let projDesc = document.querySelector('.projDesc');
+let projPage = document.querySelector('.more');
+let backBtn = document.querySelectorAll('.backProjectHub');
 
-navLink.forEach(link => {
-    link.addEventListener('click', function() {
-        
-    })
+backBtn.forEach((button) => {
+    button.addEventListener('click', () => {
+        window.location.href = 'projecten.html';
     });
+});
+
+projects.forEach((project) => {
+    project.addEventListener('click', ()=>{
+        modalProj.showModal();
+        console.log('clicked');
+
+        if(project.classList.contains('one')){
+            projTitle.innerHTML = 'Genart';
+            projDesc.innerHTML = 'In samenwerking met Ananya van het Conservatorium Maastricht een generatieve art installatie gemaakt. Het idee was om dit te laten veranderen door de muziek die Ananya live speelt...';
+            projPage.setAttribute('href', 'genart.html');
+        }else if(project.classList.contains('two')){
+            projTitle.innerHTML = 'Carlo de Mosasaurus';
+            projDesc.innerHTML = 'Aan ons werd gevraagd of we het Natuurhistorisch Museum in Maastricht wilden helpen met het museum meer interactie te geven. In teams van vier mochten we tien weken lang hieraan knutselen...';
+            projPage.setAttribute('href', 'carlo.html');
+        }else if(project.classList.contains('three')){
+            projTitle.innerHTML = 'Van Groen tot Goud';
+            projDesc.innerHTML = 'Het CBS (Centraal Bureau voor de Statistiek) heeft ons gevraagd om een multimedia website te maken over verschillende onderwerpen. Mijn team en ik hebben gekozen om het over de avocadohandel van Nederland te doen...';  
+            projPage.setAttribute('href', 'vgg.html');
+        }
+        else if(project.classList.contains('four')){
+            projTitle.innerHTML = 'TechnoArt';
+            projDesc.innerHTML = 'Het lectoraat Technology Driven Art van Hogeschool Zuyd heeft ons gevraagd om een interactieve installatie te maken. Het onderwerp mochten we zelf verzinnen, zolang kunst en technologie maarr samenkwamen...';
+            projPage.setAttribute('href', 'technoart.html');
+        }
+
+        projPage.addEventListener('click', ()=>{
+            location.open(projPage.getAttribute('href'));
+        });
+ });
+
+});
+
+closeBtn.addEventListener('click', ()=>{
+    modalProj.close();
+});
+
