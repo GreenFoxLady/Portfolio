@@ -5,14 +5,13 @@ let closeBtn = document.querySelector('.close');
 let projTitle = document.querySelector('.projTitle');
 let projDesc = document.querySelector('.projDesc');
 let projPage = document.querySelector('.more');
-let backBtn = document.querySelectorAll('.backProjectHub');
 
-backBtn.forEach((button) => {
-    button.addEventListener('click', () => {
-        window.location.href = 'projecten.html';
-    });
-});
+let playBtn = document.querySelector('.playToggle');
+let video = document.querySelector('video');
 
+let backdrop = document.querySelector('.backdrop');
+
+if(projects){
 projects.forEach((project) => {
     project.addEventListener('click', ()=>{
         modalProj.showModal();
@@ -43,8 +42,47 @@ projects.forEach((project) => {
  });
 
 });
+}
 
+if(closeBtn){
 closeBtn.addEventListener('click', ()=>{
     modalProj.close();
 });
+}
 
+if (playBtn){
+playBtn.addEventListener('click', () => {
+    console.log('click');
+  if(video.paused) {
+    video.play();
+    playBtn.style.backgroundImage = 'url(assets/svg/pause.svg)';
+  }
+  else {
+    video.pause();
+    playBtn.style.backgroundImage = 'url(assets/svg/playBtn.svg)';
+  }
+  
+});
+}
+
+
+if(document.body.classList.contains('carlo')){
+    backdrop.style.background = 'url(assets/video/carlo1.gif)';
+    backdrop.style.backgroundSize = 'contain';
+    backdrop.style.backgroundColor = 'transparent';
+    backdrop.style.backgroundClip = 'text';
+}
+
+if(document.body.classList.contains('vgg')){
+    backdrop.style.background = 'url(assets/video/cbs1.gif)';
+    backdrop.style.backgroundSize = 'contain';
+    backdrop.style.backgroundColor = 'transparent';
+    backdrop.style.backgroundClip = 'text';
+}
+
+if(document.body.classList.contains('tda')){
+    backdrop.style.background = 'url(assets/video/technoart1.gif)';
+    backdrop.style.backgroundSize = 'cover';
+    backdrop.style.backgroundColor = 'transparent';
+    backdrop.style.backgroundClip = 'text';
+}
