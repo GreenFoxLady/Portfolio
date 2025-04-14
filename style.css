@@ -366,7 +366,7 @@ header{
     }
 
     &.two{
-      background: url('assets/foto/NHM/nhmSketch2.jpg');
+      background: url('assets/video/carlo1.gif');
       background-size: cover;
       background-position: center;
     }
@@ -378,7 +378,7 @@ header{
     }
 
     &.four{
-      background: url('assets/video/');
+      background: url('assets/video/technoArt1.gif');
       background-size: cover;
       background-position: center;
     }
