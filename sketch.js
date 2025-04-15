@@ -84,7 +84,7 @@ if(document.body.classList.contains('vgg')){
 }
 
 if(document.body.classList.contains('tda')){
-    backdrop.style.background = 'url(assets/video/technoart1.gif)';
+    backdrop.style.background = 'url(assets/video/technoArt1.gif)';
     backdrop.style.backgroundSize = 'cover';
     backdrop.style.backgroundColor = 'transparent';
     backdrop.style.backgroundClip = 'text';

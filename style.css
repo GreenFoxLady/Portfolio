@@ -814,6 +814,7 @@ header{
       margin: 5% 0;
      }
 
+     /*Van Groen tot Goud*/
      &.twentseven{
       background: url('assets/foto/CBS/')
      }
@@ -830,6 +831,7 @@ header{
         border-radius: 20% 0 20% 0;
       }
 
+      /*Technoart*/
     }  
   
 }
