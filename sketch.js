@@ -11,6 +11,9 @@ let video = document.querySelector('video');
 
 let backdrop = document.querySelector('.backdrop');
 
+let backUpTopBtn = document.querySelectorAll('.backUp');
+
+
 if(projects){
 projects.forEach((project) => {
     project.addEventListener('click', ()=>{
@@ -86,3 +89,23 @@ if(document.body.classList.contains('tda')){
     backdrop.style.backgroundColor = 'transparent';
     backdrop.style.backgroundClip = 'text';
 }
+
+backUpTopBtn.forEach((upBtn) => {
+upBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log('back to top');
+});
+
+upBtn.addEventListener('mouseover', () => {
+    upBtn.style.background= 'url(assets/svg/backToTopHover.svg)';
+    upBtn.style.backgroundRepeat = 'no-repeat';
+    upBtn.style.transition = '0.5s';
+
+});
+
+upBtn.addEventListener('mouseout', () => {
+    upBtn.style.background= 'url(assets/svg/backToTop.svg)';
+    upBtn.style.backgroundRepeat = 'no-repeat';
+    upBtn.style.transition = '0.5s';
+});
+});
