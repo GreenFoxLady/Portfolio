@@ -78,9 +78,10 @@ if(document.body.classList.contains('carlo')){
 
 if(document.body.classList.contains('vgg')){
     backdrop.style.background = 'url(assets/video/cbs1.gif)';
-    backdrop.style.backgroundSize = 'contain';
+    backdrop.style.backgroundSize = '100% 100px';
     backdrop.style.backgroundColor = 'transparent';
     backdrop.style.backgroundClip = 'text';
+    backdrop.style.backgroundRepeat = 'no-repeat';
 }
 
 if(document.body.classList.contains('tda')){
