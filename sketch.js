@@ -35,7 +35,7 @@ projects.forEach((project) => {
         }
         else if(project.classList.contains('four')){
             projTitle.innerHTML = 'TechnoArt';
-            projDesc.innerHTML = 'Het lectoraat Technology Driven Art van Hogeschool Zuyd heeft ons gevraagd om een interactieve installatie te maken. Het onderwerp mochten we zelf verzinnen, zolang kunst en technologie maarr samenkwamen...';
+            projDesc.innerHTML = 'Het lectoraat Technology Driven Art van Hogeschool Zuyd heeft ons gevraagd om een interactieve installatie te maken. Het onderwerp mochten we zelf verzinnen, zolang kunst en technologie maar samenkwamen...';
             projPage.setAttribute('href', 'technoart.html');
         }
 
@@ -78,10 +78,9 @@ if(document.body.classList.contains('carlo')){
 
 if(document.body.classList.contains('vgg')){
     backdrop.style.background = 'url(assets/video/cbs1.gif)';
-    backdrop.style.backgroundSize = '100% 100px';
+    backdrop.style.backgroundSize = 'cover';
     backdrop.style.backgroundColor = 'transparent';
     backdrop.style.backgroundClip = 'text';
-    backdrop.style.backgroundRepeat = 'no-repeat';
 }
 
 if(document.body.classList.contains('tda')){
