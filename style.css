@@ -412,7 +412,7 @@ header{
 
   p{
     font-family: var(--font-ter);
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--color-darkBrown);
     text-align: center;
     margin: 0 35%;
@@ -492,7 +492,7 @@ header{
 
   background-color: var(--color-beige);
   width: 50%;
-  height: 50%;
+  height: 40%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -505,7 +505,7 @@ header{
 
   h2{
     font-family: var(--font-prime);
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 400;
     color: var(--color-roseyRed);
     margin: 0 5%;
@@ -513,7 +513,7 @@ header{
 
   p{
     font-family: var(--font-ter);
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--color-darkBrown);
     margin: 5%;
     border-top: solid 2px var(--color-darkBrown);
@@ -535,7 +535,7 @@ header{
     top: 50%;
     left: 80%;
     font-family: var(--font-sec);
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--color-darkBrown);
 
     &:hover{
@@ -806,6 +806,7 @@ header{
         background-position: center;
         height: 600px;
         border-radius: 0 50% 0 50%;
+        rotate: -180deg;
       }
 
      &.twentfive{
@@ -876,47 +877,60 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 600px;
+        height: 800px;
         width: 50%;
         transform: rotate(-90deg);
         border-radius: 0 60% 0 60%;
       }
 
       &.thirtyone{
-        background: url('assets/foto/TechnoArt/tgaSketch1.jpg');
+        background: url('assets/foto/TechnoArt/tgaSkecth1.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         height: 400px;
-        transform: rotate(-90deg);
-        border-radius: 60% 60% 0 50%;
+        border-radius: 50% 40% 60%;
+        margin: 5% 0;
       }
 
       &.thirtytwo{
-        background: url('assets/foto/TechnoArt/tga2.jpg');
+        background: url('assets/foto/TechnoArt/tgaSketch2.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         height: 400px;
-        border-radius: 0 0 60% 60%;
+        border-radius: 0 30% 40%;
+        margin: 5% 0;
       }
 
       &.thirtythree{
-        background: url('assets/foto/TechnoArt/tga3.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 400px;
-        border-radius: 0 50% 0 50%;
-      }
-
-      &.thirtyfour{
-        background: url('assets/foto/TechnoArt/tgaSketch4.jpg');
+         background: url('assets/foto/TechnoArt/tga2.jpg');
         background-size: cover;
         background-position: center;
         height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+
+      &.thirtyfour{
+         background: url('assets/foto/TechnoArt/tga3.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+         width: 45%;
         border-radius: 10% 20%;
       }
+      &.thirtyfive{
+         background: url('assets/foto/TechnoArt/tgaSketch4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+         width: 45%;
+        border-radius: 10% 5%;
+      }
+   
+   
     }  
   
 }
@@ -1004,7 +1018,7 @@ header{
 
   @media screen and (max-width: 450px) {
     header{
-      font-size: 2em;
+      font-size: 2.8em;
       span{
         font-size: 0.6em;
       }
@@ -1100,13 +1114,13 @@ header{
     }
 
     .intro{
-      height: 100px;
+      height: 180px;
       h1{
         font-size: 2em;
       }
 
       p{
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin: 0 20%;
       }
     }
@@ -1134,23 +1148,23 @@ header{
       .modal-content{
      
         h2{
-          font-size: 1.2em;
+          font-size: 1.8em;
         }
 
         p{
-          font-size: 0.7em;
+          font-size: 0.9em;
           margin: 5%;
         }
 
         a{
-          font-size: 0.9em;
+          font-size: 1em;
           position: relative;
           left: 60%;
         }
 
         .close{
-          font-size: 2em;
-          top: 5%;
+          font-size: 2.5em;
+          top: 0%;
           right: 5%;
         }
       }
@@ -1170,10 +1184,21 @@ header{
       .box{
         width: 100%;
         
-        &.one, &.oneD, &.four, &.seven, &.eight, &.nine, &.eleven, &.twenttwo, &.twentthree, &.twentnine, 
-        &.thirty, &.thirtyone, &.thirtytwo, &.thirtythree{
+        &.one, &.oneD, &.four, &.seven, &.eight, &.nine, &.eleven, &.twenttwo, &.twentthree, &.twentsix, 
+       &.thirtyone, &.thirtytwo, &.thirtythree{
           height: 300px;
           
+        }
+
+        &.twentseven, &.twenteight, &.twentnine{
+          height: 200px;
+          width: 80%;
+          margin: 20% 0;
+        }
+
+        &.thirty{
+          width: 50%;
+          height: 500px;
         }
 
         
@@ -1195,7 +1220,7 @@ header{
 
 
       h4{
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin-top: 10%;
       }
 
