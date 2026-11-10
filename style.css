@@ -476,6 +476,12 @@ header{
       background-position: center;
     }
 
+    &.five{
+      background: url('assets/foto/Lab/mermaid.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
     &:hover{
       cursor: pointer;
       opacity: 1;
@@ -929,8 +935,87 @@ header{
          width: 45%;
         border-radius: 10% 5%;
       }
+
+      /*Experimenten lab*/
+
+      &.oneL{
+        background: url('assets/video/lab3.gif');
+         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        height: 600px;
+
+        border-radius: 0 0 50% 0;
+      }
    
+      &.fourL{
+        background: url('assets/foto/Lab/research1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+
+      &.sevenL{
+          background: url('assets/foto/Lab/prototype1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+      &.eightL{
+          background: url('assets/foto/Lab/prototype2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
    
+
+      &.nineL{
+         background: url('assets/foto/Lab/prototype.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+
+      &.tenL{
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+
+      &.elevenL{
+         background: url('assets/foto/Lab/prototype1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+
+      &.thirtL{
+         background: url('assets/foto/Lab/');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 45%;
+        border-radius: 20% 10%;
+       margin-bottom: 5%;
+      }
+      }
     }  
   
 }

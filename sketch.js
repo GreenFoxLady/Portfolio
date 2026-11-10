@@ -38,7 +38,12 @@ projects.forEach((project) => {
             projDesc.innerHTML = 'Het lectoraat Technology Driven Art van Hogeschool Zuyd heeft ons gevraagd om een interactieve installatie te maken. Het onderwerp mochten we zelf verzinnen, zolang kunst en technologie maar samenkwamen...';
             projPage.setAttribute('href', 'technoart.html');
         }
-
+        
+        else if(project.classList.contains('five')){
+            projTitle.innerHTML = 'Experimenten Lab';
+            projDesc.innerHTML = 'In samenwerking met het Bonnefanten Musuem ontwierp ik een interactieve, speelse en leerzame instalaltie voor kinderen van zes tot twaalf jaar oud.'
+            projPage.setAttribute('href', 'lab.html');
+        }
         projPage.addEventListener('click', ()=>{
             location.open(projPage.getAttribute('href'));
         });
@@ -85,6 +90,13 @@ if(document.body.classList.contains('vgg')){
 
 if(document.body.classList.contains('tda')){
     backdrop.style.background = 'url(assets/video/technoArt1.gif)';
+    backdrop.style.backgroundSize = 'cover';
+    backdrop.style.backgroundColor = 'transparent';
+    backdrop.style.backgroundClip = 'text';
+}
+
+if(document.body.classList.contains('lab')){
+    backdrop.style.background = 'url(assets/video/lab3.gif)';
     backdrop.style.backgroundSize = 'cover';
     backdrop.style.backgroundColor = 'transparent';
     backdrop.style.backgroundClip = 'text';
